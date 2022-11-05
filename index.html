@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Suchi</title>
+  </head>
+  <body>
+    <header>
+      <h2 class="company-name">sushi</h2>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#sets">sets</a>
+          </li>
+          <li>
+            <a href="#">services</a>
+          </li>
+          <li>
+            <a href="#">testimonials</a>
+          </li>
+          <li>
+            <a href="#">portfolio</a>
+          </li>
+          <li>
+            <a href="#contact">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-cover">
+        <div class="header-title">
+          <h1>welcome to</h1>
+          <h3>sushi store</h3>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="sushi-sets-section" id="sets">
+        <div class="sushi-sets-section-title">
+          <h2>our sushi sets</h2>
+          <hr />
+          <p>
+            Our Sushi Sets are special and traditional type of sushi. It is
+            based on rice, a small amount of wasabi and seafood. For lovers of
+            authentic Japanese cuisine.
+          </p>
+        </div>
+        <div class="sushi-sets-list">
+          <div class="product-card">
+            <div class="img-wrapper">
+              <img src="./images/sushi-586585.jpeg" alt="sushi" />
+            </div>
+            <h3>Salmon Set</h3>
+            <p>
+              Raw Salmon and Seasoned White Rice Nigiri, Rolls with Raw Salmon,
+              Avocado, Seasoned White Rice, Avocado, topped with Sesame Seeds
+            </p>
+          </div>
+          <div class="product-card">
+            <div class="img-wrapper">
+              <img src="./images/55-Sushi-Set-Gross.jpeg" alt="sushi" />
+            </div>
+            <h3>Deluxe Sushi</h3>
+            <p>
+              Raw Salmon and Seasoned White Rice Nigiri, Rolls with Raw Salmon,
+              Avocado, Seasoned White Rice, Avocado, topped with Sesame Seeds
+            </p>
+          </div>
+          <div class="product-card">
+            <div class="img-wrapper">
+              <img
+                src="./images/sushi-rolls-hot-maki-california-rolls-served-with-ginger-wasabi_141793-1274.webp"
+                alt="sushi"
+              />
+            </div>
+            <h3>Hot Rolls Set</h3>
+            <p>
+              Raw Salmon and Seasoned White Rice Nigiri, Rolls with Raw Salmon,
+              Avocado, Seasoned White Rice, Avocado, topped with Sesame Seeds
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard">
+        <div class="dashboard-item">
+          <h3>25000</h3>
+          <p>happy clients</p>
+        </div>
+        <div class="dashboard-item">
+          <h3>300</h3>
+          <p>ingredients</p>
+        </div>
+        <div class="dashboard-item">
+          <h3>100</h3>
+          <p>cooks</p>
+        </div>
+        <div class="dashboard-item">
+          <h3>30</h3>
+          <p>stores</p>
+        </div>
+      </div>
+      <div class="banner"></div>
+      <div class="contact-section" id="contact">
+        <h3 class="contact-title">contact us</h3>
+        <p class="contact-description">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam
+        </p>
+      </div>
+    </main>
+
+    <script>
+      const navbar = document.querySelector(".navbar");
+      let sticky = navbar.offsetTop;
+
+      const stickyNavbarOnScroll = () =>
+        window.pageYOffset >= sticky
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+
+      window.onscroll = () => stickyNavbarOnScroll();
+    </script>
+  </body>
+</html>

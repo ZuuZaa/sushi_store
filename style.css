@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+header .company-name {
+  opacity: 0.71;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #d7794a;
+  font-family: "Myriad Pro";
+  background-color: #fefefe;
+  padding: 45px 60px;
+}
+header nav {
+  background: #878d8e;
+  transition: .5s;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header nav ul {
+  display: flex;
+  padding: 0 50px;
+}
+header nav ul li {
+  transition: 0.5s;
+}
+header nav ul li a {
+  color: #e6e4e4;
+  text-transform: uppercase;
+  margin: 30px 15px;
+  display: inline-block;
+  transition: 0.5s;
+}
+header nav ul li:hover {
+  background: rgba(46, 143, 148, 0.826);
+}
+header nav ul li a:hover {
+  color: #302f2f;
+}
+header .header-cover {
+  background: url("./images/Low-FODMAP-Sushi.webp") no-repeat center/cover;
+  width: 100vw;
+  min-height: calc(100vh - 190px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+header .header-title {
+  margin: 110px 130px;
+  text-transform: uppercase;
+}
+header .header-title h1 {
+  font-size: 72px;
+  letter-spacing: 2px;
+  color: #fcf9f7;
+}
+header .header-title h3 {
+  font-size: 48px;
+  letter-spacing: 1px;
+
+  color: #d7794a;
+  font-family: "Athelas";
+  text-align: center;
+}
+main .sushi-sets-section {
+  padding: 200px 0;
+}
+.sushi-sets-section-title h2 {
+  font-size: 61px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 40px;
+  color: #a95e39;
+  font-family: "Athelas";
+  text-align: center;
+}
+.sushi-sets-section-title hr {
+  border: 1px solid #88543a;
+  width: 441px;
+  margin: 0 auto;
+}
+.sushi-sets-section-title p {
+  width: 70vw;
+  font-size: 31px;
+  letter-spacing: 1px;
+  color: #000000;
+  font-family: "Helvetica";
+  text-align: center;
+  margin: 80px auto;
+}
+.sushi-sets-list {
+  margin: 50px 100px;
+  display: flex;
+}
+.sushi-sets-list .product-card {
+  width: 30%;
+  margin: 20px;
+}
+.sushi-sets-list .img-wrapper {
+  height: 350px;
+}
+.sushi-sets-list .product-card img {
+  width: 100%;
+  height: 100%;
+}
+.product-card h3 {
+  padding: 40px;
+  font-size: 31px;
+  letter-spacing: 1px;
+  color: #000000;
+  font-family: "Helvetica";
+  text-align: center;
+}
+.product-card p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #000000;
+  font-family: "Helvetica";
+  text-align: center;
+}
+main .dashboard {
+  background: #103d4c;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+.dashboard .dashboard-item {
+  margin: 0 80px;
+  text-align: center;
+}
+.dashboard .dashboard-item h3 {
+  font-size: 77px;
+  letter-spacing: 2px;
+  color: #995437;
+  font-weight: bold;
+  font-family: "Vani";
+}
+.dashboard .dashboard-item p {
+  font-size: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Myriad Pro";
+}
+main .banner {
+  background: linear-gradient(to left, #103d4c72, #103d4c72),
+    url("./images/csm_Sushi_UEbersichtsbild_1024x576_8eade74088.jpeg") no-repeat
+      center/cover;
+  width: 100vw;
+  height: 1100px;
+}
+main .contact-section {
+  background: #103d4c;
+  padding-top: 250px;
+  padding-bottom: 150px;
+}
+main .contact-title{
+  font-size: 66px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Athelas";
+  margin: 50px 0;
+  text-align: center;
+}
+main .contact-description {
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: #c0c0c0;
+  font-weight: 400;
+  font-family: "Quattrocento Sans";
+  text-align: center;
+}
